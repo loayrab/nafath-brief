@@ -28,5 +28,6 @@ A star schema connects a central fact table directly to denormalized dimension t
 
 Resource: Understand star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 ## Misconception in My Track
-
+A common misconception is that creating a dedicated 5G network slice automatically gives emergency responders completely isolated resources and guaranteed availability. In reality, network slices can use shared, prioritized, or dedicated resources, depending on implementation and service requirements. Section 16.3.3.1, "General," under "Resource Isolation and Management" in 3GPP TS 38.300 explains these resource allocation options. Therefore, operators must configure appropriate isolation and resource management policies for emergency traffic. They should also provide redundancy, capacity planning, and monitoring because slicing alone cannot prevent physical outages or every service disruption.
 ## Open Question
+How can the operator verify that an emergency responder's dedicated 5G network slice maintains acceptable latency and availability during extreme congestion or a cyberattack? I would investigate practical testing methods, monitoring metrics, and resource allocation policies under realistic emergency conditions.

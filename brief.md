@@ -8,9 +8,13 @@ HTTP safe methods are GET, HEAD, OPTIONS, and TRACE because they are intended on
 
 Resource: RFC 9110: HTTP Semantics - https://www.rfc-editor.org/rfc/rfc9110.html
 ## AI
+Overfitting occurs when a machine learning model learns noise and specific patterns from training data instead of general relationships, causing poor performance on unseen data. For 5G congestion prediction, this could produce unreliable forecasts. Cross-validation evaluates the model using multiple training and validation splits, helping identify performance differences across datasets. Because network measurements are time-dependent, time-series cross-validation should preserve chronological order to avoid using future information during training.
 
+Resource: Cross-validation: evaluating estimator performance - https://scikit-learn.org/stable/modules/cross_validation.html
 ## Mobile
+An emergency responder's mobile app should follow an offline-first design, allowing users to view cached information and record critical updates without connectivity. Changes should be stored securely in a local database and queued for synchronization. When connectivity returns, the app should send pending updates, retry temporary failures, and download server changes. Synchronization must detect and resolve conflicts to prevent data loss or accidental overwriting of important emergency records.
 
+Resource: Build an offline-first app - https://developer.android.com/topic/architecture/data-layer/offline-first
 ## Networking
 
 ## Cybersecurity

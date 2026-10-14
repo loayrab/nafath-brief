@@ -16,11 +16,17 @@ An emergency responder's mobile app should follow an offline-first design, allow
 
 Resource: Build an offline-first app - https://developer.android.com/topic/architecture/data-layer/offline-first
 ## Networking
+5G network slicing allows operators to create multiple logical networks over shared physical infrastructure, each configured for specific service requirements. A dedicated slice for emergency responders could prioritize critical communications, allocate network resources, and support strict latency and reliability targets during congestion. It can also apply tailored access and security policies. However, slicing does not automatically guarantee uninterrupted service; sufficient capacity, resilient infrastructure, and continuous monitoring are still necessary during outages or attacks.
 
+Resource: 5G Requirements and Key Performance Indicators - https://www.3gpp.org/ftp/inbox/marcoms/ICT_6_1-2.pdf
 ## Cybersecurity
+The incident response lifecycle begins with preparation, including response plans, trained teams, and protective controls. Detection and analysis identify suspicious activity and assess its impact on emergency communications. During containment, responders isolate compromised systems while preserving essential services. Eradication removes malicious components, and recovery restores systems and verifies normal operation. Post-incident activities document lessons learned and improve defenses. NIST's updated guidance integrates these activities into continuous cybersecurity risk management.
 
+Resource: NIST SP 800-61 Rev. 3: Incident Response Recommendations and Considerations for Cybersecurity Risk Management - https://csrc.nist.gov/pubs/sp/800/61/r3/final
 ## Data
+A star schema connects a central fact table directly to denormalized dimension tables, making analytical queries simpler. A snowflake schema normalizes dimensions into additional related tables, reducing redundancy but increasing join complexity. For daily 5G usage reporting by region, a star schema is preferable. A usage fact table can store traffic volume and session counts, linked to date and region dimensions. This structure supports straightforward filtering, aggregation, and reporting.
 
+Resource: Understand star schema and the importance for Power BI - https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 ## Misconception in My Track
 
 ## Open Question
